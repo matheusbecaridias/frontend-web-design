@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍔Hamburgueria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <h1>🍔Hamburgueria </h1>
+    </div>
+
+    <nav>
+      <a href="#" onclick="mostrarSecao('hamburgueres', this)" >Hambúrgueres</a>
+      <a href="#" onclick="mostrarSecao('bebidas', this)">Bebidas</a>
+      <a href="#" onclick="mostrarSecao('sobremesas', this)">Sobremesas</a>
+   </nav>
+
+  </header>
+  <main>
+
+    <section id="hamburgueres">
+      <h2>Nossos Hamburgueres</h2>
+      <div class="containers">
+
+        <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/Cheeseburger.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity" data-name="Cheeseburger" data-price="24.90">
+        </div>
+
+        <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/x-bacon.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity" data-name="x-bacon" data-price="25.90">
+        </div>
+
+        <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/x-salada.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity" data-name="x-salada" data-price="25.50">
+        </div>
+
+      </div>
+
+      <div class="grid-produtos"></div>
+    </section>
+
+    <section id="bebidas">
+      <h2>Nossas Bebidas</h2>
+      <div class="containers">
+
+        <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/Coca-cola.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity", data-name="Coca-cola", data-price="5,90">
+        </div>
+
+         <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/Fanta.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity", data-name="Fanta", data-price="5,40">
+        </div>
+
+         <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/Sprite.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity", data-name="Sprite", data-price="5,00">
+        </div>
+
+      </div>
+      <div class="grid-produtos"></div>
+    </section>
+
+    <section id="sobremesas">
+      <h2>Nossas Sobremesas</h2>
+      <div class="containers">
+
+        <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/Manjar.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity", data-name="Manjar", data-price="7,90">
+        </div>
+
+         <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/Quindim.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity", data-name="Quindim", data-price="6,40">
+        </div>
+
+         <div class="item-container">
+          <img src="https://github.com/ddgouvea/Img/blob/main/Hamb/Sorvete.png?raw=true" alt="" class="item">
+          <input type="number" min="0" value="0" class="quantity", data-name="Sorvete", data-price="5,50">
+        </div>
+
+      </div>
+      <div class="grid-produtos"></div>
+    </section>
+
+  <button id="btnGerarPedido" style="margin: 20px auto; display: block; padding: 10px 20px; font-size: 18px; cursor: pointer;">Gerar Pedido</button>
+
+  <div class="grid-produtos" id="pedidoConsolidado" style="margin-top: 20px; padding: 10px; background: #f0f0f0; border-radius: 10px;"></div>
+
+  <div class="grid-produtos" id="pedidoConsolidado" style="margin-top: 20px; padding: 10px; background: #f0f0f0; border-radius: 10px;"></div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <button id="btnEnviarPedido" style="padding: 12px 30px; font-size: 18px; cursor: pointer; background-color: #28a745; color: white; border: none; border-radius: 8px;">
+    Enviar Pedido
+  </button>
+</div>
+
+</main>
+
+  <footer>
+    <p>Feito com ❤️ por Donizete de Gouvea</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
+
